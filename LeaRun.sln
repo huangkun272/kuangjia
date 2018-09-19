@@ -1,0 +1,481 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.Data", "LeaRun.Data", "{C579EF1E-ACF0-40FE-BBEF-6244437BBFEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.Cache", "LeaRun.Cache", "{BBB63BC5-EBF2-4ED2-8804-7187223C3DF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.Application", "LeaRun.Application", "{29DFF52B-8455-4EA1-8798-3AEE210D9372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.Util", "LeaRun.Util", "{5C21750D-4143-4749-9489-F739765F542D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{26CFF3C8-4B33-4588-8787-D631124FD63E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.CodeGenerator", "LeaRun.CodeGenerator\LeaRun.CodeGenerator.csproj", "{6FAADC1C-DB04-4F65-9856-D989FC3B46C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.WebApp", "LeaRun.WebApp", "{43E72B13-75A9-49A8-8D6B-56EB87F56DC8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LeaRun.Application.App", "http://localhost:52092", "{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52092"
+		Debug.AspNetCompiler.PhysicalPath = "LeaRun.WebApp\LeaRun.Application.App\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52092\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52092"
+		Release.AspNetCompiler.PhysicalPath = "LeaRun.WebApp\LeaRun.Application.App\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52092\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "LeaRun.WebApp\LeaRun.Application.App\"
+		DefaultWebSiteLanguage = "Visual C#"
+		StartServerOnDebug = "false"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.AppSerivce", "LeaRun.WebApp\LeaRun.Application.AppSerivce\LeaRun.Application.AppSerivce.csproj", "{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9} = {21566527-8F54-4A8D-AA68-7662C2C31FB9}
+		{73A55239-A22D-4AC9-B412-64EA83035A18} = {73A55239-A22D-4AC9-B412-64EA83035A18}
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046} = {7C84F157-09B6-42D8-85F2-04AF1F31A046}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{42234E7A-B484-479D-B1C1-08A08A59C935} = {42234E7A-B484-479D-B1C1-08A08A59C935}
+		{5AF4997C-4395-48AF-990C-932259111DFF} = {5AF4997C-4395-48AF-990C-932259111DFF}
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A} = {9B10DB87-130C-41D3-8687-1FAC877DB74A}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Web", "LeaRun.Application\LeaRun.Application.Web\LeaRun.Application.Web.csproj", "{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9} = {21566527-8F54-4A8D-AA68-7662C2C31FB9}
+		{73A55239-A22D-4AC9-B412-64EA83035A18} = {73A55239-A22D-4AC9-B412-64EA83035A18}
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046} = {7C84F157-09B6-42D8-85F2-04AF1F31A046}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{42234E7A-B484-479D-B1C1-08A08A59C935} = {42234E7A-B484-479D-B1C1-08A08A59C935}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A} = {9B10DB87-130C-41D3-8687-1FAC877DB74A}
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F} = {2EF55895-D7DD-42D6-8741-F8100E5C210F}
+		{4F8B359E-B664-48C0-88D0-31C140602654} = {4F8B359E-B664-48C0-88D0-31C140602654}
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C} = {51E69AE3-A885-4A84-B71C-801A413C5F1C}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Code", "LeaRun.Application\LeaRun.Application.Code\LeaRun.Application.Code.csproj", "{9B10DB87-130C-41D3-8687-1FAC877DB74A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{5AF4997C-4395-48AF-990C-932259111DFF} = {5AF4997C-4395-48AF-990C-932259111DFF}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Busines", "LeaRun.Application\LeaRun.Application.Busines\LeaRun.Application.Busines.csproj", "{21566527-8F54-4A8D-AA68-7662C2C31FB9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349} = {A610B831-7B6A-4E53-8C5D-9B3F0707E349}
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5} = {6BC8C632-4985-4E7E-B5CA-375D400EA8A5}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{5AF4997C-4395-48AF-990C-932259111DFF} = {5AF4997C-4395-48AF-990C-932259111DFF}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+		{4F8B359E-B664-48C0-88D0-31C140602654} = {4F8B359E-B664-48C0-88D0-31C140602654}
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078} = {1751A2DD-0F00-4C76-B180-97E8F72FE078}
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A} = {D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211} = {6CE11FF9-1CB7-494E-89C7-5F06BEA94211}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.IService", "LeaRun.Application\LeaRun.Application.IService\LeaRun.Application.IService.csproj", "{6CE11FF9-1CB7-494E-89C7-5F06BEA94211}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2} = {2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078} = {1751A2DD-0F00-4C76-B180-97E8F72FE078}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Service", "LeaRun.Application\LeaRun.Application.Service\LeaRun.Application.Service.csproj", "{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2} = {2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7} = {528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078} = {1751A2DD-0F00-4C76-B180-97E8F72FE078}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Mapping", "LeaRun.Application\LeaRun.Application.Mapping\LeaRun.Application.Mapping.csproj", "{42234E7A-B484-479D-B1C1-08A08A59C935}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Cache", "LeaRun.Application\LeaRun.Application.Cache\LeaRun.Application.Cache.csproj", "{73A55239-A22D-4AC9-B412-64EA83035A18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{5AF4997C-4395-48AF-990C-932259111DFF} = {5AF4997C-4395-48AF-990C-932259111DFF}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Data.Repository", "LeaRun.Data\LeaRun.Data.Repository\LeaRun.Data.Repository.csproj", "{1751A2DD-0F00-4C76-B180-97E8F72FE078}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7} = {528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639} = {2A2611D5-0A19-4EAD-A57F-0D361DC92639}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util", "LeaRun.Util\LeaRun.Util\LeaRun.Util.csproj", "{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {4B7DDE80-DFA1-4938-93F8-3721E2C592B9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.Extension", "LeaRun.Util\LeaRun.Util.Extension\LeaRun.Util.Extension.csproj", "{4B7DDE80-DFA1-4938-93F8-3721E2C592B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.FlowWork", "LeaRun.Util\LeaRun.Util.FlowWork\LeaRun.Util.FlowWork.csproj", "{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.Ioc", "LeaRun.Util\LeaRun.Util.Ioc\LeaRun.Util.Ioc.csproj", "{2A2611D5-0A19-4EAD-A57F-0D361DC92639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.Log", "LeaRun.Util\LeaRun.Util.Log\LeaRun.Util.Log.csproj", "{2EF55895-D7DD-42D6-8741-F8100E5C210F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.Offices", "LeaRun.Util\LeaRun.Util.Offices\LeaRun.Util.Offices.csproj", "{4F8B359E-B664-48C0-88D0-31C140602654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.WebControl", "LeaRun.Util\LeaRun.Util.WebControl\LeaRun.Util.WebControl.csproj", "{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.WeChat", "LeaRun.Util\LeaRun.Util.WeChat\LeaRun.Util.WeChat.csproj", "{A610B831-7B6A-4E53-8C5D-9B3F0707E349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Cache", "LeaRun.Cache\LeaRun.Cache\LeaRun.Cache.csproj", "{5AF4997C-4395-48AF-990C-932259111DFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Cache.Redis", "LeaRun.Cache\LeaRun.Cache.Redis\LeaRun.Cache.Redis.csproj", "{51E69AE3-A885-4A84-B71C-801A413C5F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Data", "LeaRun.Data\LeaRun.Data\LeaRun.Data.csproj", "{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeaRun.SOA", "LeaRun.SOA", "{ED258CD0-0A0C-490B-9D8F-B4CEC4467251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.SOA.SSO", "LeaRun.SOA\LeaRun.SOA.SSO\LeaRun.SOA.SSO.csproj", "{54406266-AA46-4B13-9237-29A011D9EB19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046} = {7C84F157-09B6-42D8-85F2-04AF1F31A046}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {C10920FE-8C74-4993-A7F4-1DA189DA842C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Data.Dapper", "LeaRun.Data\LeaRun.Data.Dapper\LeaRun.Data.Dapper.csproj", "{F4E0FD13-CCD7-425E-AF02-FA270C283447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Data.EF", "LeaRun.Data\LeaRun.Data.EF\LeaRun.Data.EF.csproj", "{7C84F157-09B6-42D8-85F2-04AF1F31A046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Application.Entity", "LeaRun.Application\LeaRun.Application.Entity\LeaRun.Application.Entity.csproj", "{C10920FE-8C74-4993-A7F4-1DA189DA842C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Cache.Factory", "LeaRun.Cache\LeaRun.Cache.Factory\LeaRun.Cache.Factory.csproj", "{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.Util.SignalR", "LeaRun.Util.SignalR\LeaRun.Util.SignalR.csproj", "{6BC8C632-4985-4E7E-B5CA-375D400EA8A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaRun.SOA.IM", "LeaRun.SOA\LeaRun.SOA.IM\LeaRun.SOA.IM.csproj", "{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FAADC1C-DB04-4F65-9856-D989FC3B46C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAADC1C-DB04-4F65-9856-D989FC3B46C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAADC1C-DB04-4F65-9856-D989FC3B46C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAADC1C-DB04-4F65-9856-D989FC3B46C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42234E7A-B484-479D-B1C1-08A08A59C935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42234E7A-B484-479D-B1C1-08A08A59C935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42234E7A-B484-479D-B1C1-08A08A59C935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42234E7A-B484-479D-B1C1-08A08A59C935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A55239-A22D-4AC9-B412-64EA83035A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A55239-A22D-4AC9-B412-64EA83035A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A55239-A22D-4AC9-B412-64EA83035A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A55239-A22D-4AC9-B412-64EA83035A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8B359E-B664-48C0-88D0-31C140602654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8B359E-B664-48C0-88D0-31C140602654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8B359E-B664-48C0-88D0-31C140602654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8B359E-B664-48C0-88D0-31C140602654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF4997C-4395-48AF-990C-932259111DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF4997C-4395-48AF-990C-932259111DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF4997C-4395-48AF-990C-932259111DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF4997C-4395-48AF-990C-932259111DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54406266-AA46-4B13-9237-29A011D9EB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54406266-AA46-4B13-9237-29A011D9EB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54406266-AA46-4B13-9237-29A011D9EB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54406266-AA46-4B13-9237-29A011D9EB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E0FD13-CCD7-425E-AF02-FA270C283447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E0FD13-CCD7-425E-AF02-FA270C283447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E0FD13-CCD7-425E-AF02-FA270C283447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E0FD13-CCD7-425E-AF02-FA270C283447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A0DB7DB-46BE-4BB9-AFCC-59D522D1742D} = {43E72B13-75A9-49A8-8D6B-56EB87F56DC8}
+		{EE57FF2E-C1A6-432C-BFD6-BFE10D17F735} = {43E72B13-75A9-49A8-8D6B-56EB87F56DC8}
+		{1D8FC20B-427E-4D5F-813B-D3FF2D89A96C} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{9B10DB87-130C-41D3-8687-1FAC877DB74A} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{21566527-8F54-4A8D-AA68-7662C2C31FB9} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{6CE11FF9-1CB7-494E-89C7-5F06BEA94211} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{D6B8ABEA-C923-4605-99A9-B7ACA5DE4D8A} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{42234E7A-B484-479D-B1C1-08A08A59C935} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{73A55239-A22D-4AC9-B412-64EA83035A18} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{1751A2DD-0F00-4C76-B180-97E8F72FE078} = {C579EF1E-ACF0-40FE-BBEF-6244437BBFEE}
+		{07AA2566-D0E5-47AF-A17D-3B1C6AEE598D} = {5C21750D-4143-4749-9489-F739765F542D}
+		{4B7DDE80-DFA1-4938-93F8-3721E2C592B9} = {5C21750D-4143-4749-9489-F739765F542D}
+		{2DB6492A-3CDA-40CB-9BAB-51F00510B0C2} = {5C21750D-4143-4749-9489-F739765F542D}
+		{2A2611D5-0A19-4EAD-A57F-0D361DC92639} = {5C21750D-4143-4749-9489-F739765F542D}
+		{2EF55895-D7DD-42D6-8741-F8100E5C210F} = {5C21750D-4143-4749-9489-F739765F542D}
+		{4F8B359E-B664-48C0-88D0-31C140602654} = {5C21750D-4143-4749-9489-F739765F542D}
+		{93F81DF7-5A0B-4A13-A90E-8CF7C41955C3} = {5C21750D-4143-4749-9489-F739765F542D}
+		{A610B831-7B6A-4E53-8C5D-9B3F0707E349} = {5C21750D-4143-4749-9489-F739765F542D}
+		{5AF4997C-4395-48AF-990C-932259111DFF} = {BBB63BC5-EBF2-4ED2-8804-7187223C3DF5}
+		{51E69AE3-A885-4A84-B71C-801A413C5F1C} = {BBB63BC5-EBF2-4ED2-8804-7187223C3DF5}
+		{528F308B-D2CD-4BD1-A94F-BF94ABEF08D7} = {C579EF1E-ACF0-40FE-BBEF-6244437BBFEE}
+		{54406266-AA46-4B13-9237-29A011D9EB19} = {ED258CD0-0A0C-490B-9D8F-B4CEC4467251}
+		{F4E0FD13-CCD7-425E-AF02-FA270C283447} = {C579EF1E-ACF0-40FE-BBEF-6244437BBFEE}
+		{7C84F157-09B6-42D8-85F2-04AF1F31A046} = {C579EF1E-ACF0-40FE-BBEF-6244437BBFEE}
+		{C10920FE-8C74-4993-A7F4-1DA189DA842C} = {29DFF52B-8455-4EA1-8798-3AEE210D9372}
+		{A68CDD21-2E12-4B11-95DB-D0A0FCED48B1} = {BBB63BC5-EBF2-4ED2-8804-7187223C3DF5}
+		{6BC8C632-4985-4E7E-B5CA-375D400EA8A5} = {5C21750D-4143-4749-9489-F739765F542D}
+		{61A6C2F5-2C4B-4C00-AA89-9A4ADC059EAB} = {ED258CD0-0A0C-490B-9D8F-B4CEC4467251}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+		SolutionGuid = {A73121EC-33B2-411B-80C3-AE6EDADE0E28}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 30
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://myfirstproject127.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LeaRun.CodeGenerator\\LeaRun.CodeGenerator.csproj
+		SccProjectName1 = LeaRun.CodeGenerator
+		SccLocalPath1 = LeaRun.CodeGenerator
+		SccWebProject2 = true
+		SccProjectUniqueName2 = http://localhost:52092
+		SccProjectTopLevelParentUniqueName2 = LeaRun.sln
+		SccProjectName2 = LeaRun.WebApp/LeaRun.Application.App
+		SccLocalPath2 = LeaRun.WebApp\\LeaRun.Application.App
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = LeaRun.WebApp\\LeaRun.Application.AppSerivce\\LeaRun.Application.AppSerivce.csproj
+		SccProjectTopLevelParentUniqueName3 = LeaRun.sln
+		SccProjectName3 = LeaRun.WebApp/LeaRun.Application.AppSerivce
+		SccLocalPath3 = LeaRun.WebApp\\LeaRun.Application.AppSerivce
+		SccProjectUniqueName4 = LeaRun.Application\\LeaRun.Application.Web\\LeaRun.Application.Web.csproj
+		SccProjectTopLevelParentUniqueName4 = LeaRun.sln
+		SccProjectName4 = LeaRun.Application/LeaRun.Application.Web
+		SccLocalPath4 = LeaRun.Application\\LeaRun.Application.Web
+		SccProjectUniqueName5 = LeaRun.Application\\LeaRun.Application.Code\\LeaRun.Application.Code.csproj
+		SccProjectTopLevelParentUniqueName5 = LeaRun.sln
+		SccProjectName5 = LeaRun.Application/LeaRun.Application.Code
+		SccLocalPath5 = LeaRun.Application\\LeaRun.Application.Code
+		SccProjectUniqueName6 = LeaRun.Application\\LeaRun.Application.Busines\\LeaRun.Application.Busines.csproj
+		SccProjectTopLevelParentUniqueName6 = LeaRun.sln
+		SccProjectName6 = LeaRun.Application/LeaRun.Application.Busines
+		SccLocalPath6 = LeaRun.Application\\LeaRun.Application.Busines
+		SccProjectUniqueName7 = LeaRun.Application\\LeaRun.Application.IService\\LeaRun.Application.IService.csproj
+		SccProjectTopLevelParentUniqueName7 = LeaRun.sln
+		SccProjectName7 = LeaRun.Application/LeaRun.Application.IService
+		SccLocalPath7 = LeaRun.Application\\LeaRun.Application.IService
+		SccProjectUniqueName8 = LeaRun.Application\\LeaRun.Application.Service\\LeaRun.Application.Service.csproj
+		SccProjectTopLevelParentUniqueName8 = LeaRun.sln
+		SccProjectName8 = LeaRun.Application/LeaRun.Application.Service
+		SccLocalPath8 = LeaRun.Application\\LeaRun.Application.Service
+		SccProjectUniqueName9 = LeaRun.Application\\LeaRun.Application.Mapping\\LeaRun.Application.Mapping.csproj
+		SccProjectTopLevelParentUniqueName9 = LeaRun.sln
+		SccProjectName9 = LeaRun.Application/LeaRun.Application.Mapping
+		SccLocalPath9 = LeaRun.Application\\LeaRun.Application.Mapping
+		SccProjectUniqueName10 = LeaRun.Application\\LeaRun.Application.Cache\\LeaRun.Application.Cache.csproj
+		SccProjectTopLevelParentUniqueName10 = LeaRun.sln
+		SccProjectName10 = LeaRun.Application/LeaRun.Application.Cache
+		SccLocalPath10 = LeaRun.Application\\LeaRun.Application.Cache
+		SccProjectUniqueName11 = LeaRun.Data\\LeaRun.Data.Repository\\LeaRun.Data.Repository.csproj
+		SccProjectTopLevelParentUniqueName11 = LeaRun.sln
+		SccProjectName11 = LeaRun.Data/LeaRun.Data.Repository
+		SccLocalPath11 = LeaRun.Data\\LeaRun.Data.Repository
+		SccProjectUniqueName12 = LeaRun.Util\\LeaRun.Util\\LeaRun.Util.csproj
+		SccProjectTopLevelParentUniqueName12 = LeaRun.sln
+		SccProjectName12 = LeaRun.Util/LeaRun.Util
+		SccLocalPath12 = LeaRun.Util\\LeaRun.Util
+		SccProjectUniqueName13 = LeaRun.Util\\LeaRun.Util.Extension\\LeaRun.Util.Extension.csproj
+		SccProjectTopLevelParentUniqueName13 = LeaRun.sln
+		SccProjectName13 = LeaRun.Util/LeaRun.Util.Extension
+		SccLocalPath13 = LeaRun.Util\\LeaRun.Util.Extension
+		SccProjectUniqueName14 = LeaRun.Util\\LeaRun.Util.FlowWork\\LeaRun.Util.FlowWork.csproj
+		SccProjectTopLevelParentUniqueName14 = LeaRun.sln
+		SccProjectName14 = LeaRun.Util/LeaRun.Util.FlowWork
+		SccLocalPath14 = LeaRun.Util\\LeaRun.Util.FlowWork
+		SccProjectUniqueName15 = LeaRun.Util\\LeaRun.Util.Ioc\\LeaRun.Util.Ioc.csproj
+		SccProjectTopLevelParentUniqueName15 = LeaRun.sln
+		SccProjectName15 = LeaRun.Util/LeaRun.Util.Ioc
+		SccLocalPath15 = LeaRun.Util\\LeaRun.Util.Ioc
+		SccProjectUniqueName16 = LeaRun.Util\\LeaRun.Util.Log\\LeaRun.Util.Log.csproj
+		SccProjectTopLevelParentUniqueName16 = LeaRun.sln
+		SccProjectName16 = LeaRun.Util/LeaRun.Util.Log
+		SccLocalPath16 = LeaRun.Util\\LeaRun.Util.Log
+		SccProjectUniqueName17 = LeaRun.Util\\LeaRun.Util.Offices\\LeaRun.Util.Offices.csproj
+		SccProjectTopLevelParentUniqueName17 = LeaRun.sln
+		SccProjectName17 = LeaRun.Util/LeaRun.Util.Offices
+		SccLocalPath17 = LeaRun.Util\\LeaRun.Util.Offices
+		SccProjectUniqueName18 = LeaRun.Util\\LeaRun.Util.WebControl\\LeaRun.Util.WebControl.csproj
+		SccProjectTopLevelParentUniqueName18 = LeaRun.sln
+		SccProjectName18 = LeaRun.Util/LeaRun.Util.WebControl
+		SccLocalPath18 = LeaRun.Util\\LeaRun.Util.WebControl
+		SccProjectUniqueName19 = LeaRun.Util\\LeaRun.Util.WeChat\\LeaRun.Util.WeChat.csproj
+		SccProjectTopLevelParentUniqueName19 = LeaRun.sln
+		SccProjectName19 = LeaRun.Util/LeaRun.Util.WeChat
+		SccLocalPath19 = LeaRun.Util\\LeaRun.Util.WeChat
+		SccProjectUniqueName20 = LeaRun.Cache\\LeaRun.Cache\\LeaRun.Cache.csproj
+		SccProjectTopLevelParentUniqueName20 = LeaRun.sln
+		SccProjectName20 = LeaRun.Cache/LeaRun.Cache
+		SccLocalPath20 = LeaRun.Cache\\LeaRun.Cache
+		SccProjectUniqueName21 = LeaRun.Cache\\LeaRun.Cache.Redis\\LeaRun.Cache.Redis.csproj
+		SccProjectTopLevelParentUniqueName21 = LeaRun.sln
+		SccProjectName21 = LeaRun.Cache/LeaRun.Cache.Redis
+		SccLocalPath21 = LeaRun.Cache\\LeaRun.Cache.Redis
+		SccProjectUniqueName22 = LeaRun.Data\\LeaRun.Data\\LeaRun.Data.csproj
+		SccProjectTopLevelParentUniqueName22 = LeaRun.sln
+		SccProjectName22 = LeaRun.Data/LeaRun.Data
+		SccLocalPath22 = LeaRun.Data\\LeaRun.Data
+		SccProjectUniqueName23 = LeaRun.SOA\\LeaRun.SOA.SSO\\LeaRun.SOA.SSO.csproj
+		SccProjectTopLevelParentUniqueName23 = LeaRun.sln
+		SccProjectName23 = LeaRun.SOA/LeaRun.SOA.SSO
+		SccLocalPath23 = LeaRun.SOA\\LeaRun.SOA.SSO
+		SccProjectUniqueName24 = LeaRun.Data\\LeaRun.Data.Dapper\\LeaRun.Data.Dapper.csproj
+		SccProjectTopLevelParentUniqueName24 = LeaRun.sln
+		SccProjectName24 = LeaRun.Data/LeaRun.Data.Dapper
+		SccLocalPath24 = LeaRun.Data\\LeaRun.Data.Dapper
+		SccProjectUniqueName25 = LeaRun.Data\\LeaRun.Data.EF\\LeaRun.Data.EF.csproj
+		SccProjectTopLevelParentUniqueName25 = LeaRun.sln
+		SccProjectName25 = LeaRun.Data/LeaRun.Data.EF
+		SccLocalPath25 = LeaRun.Data\\LeaRun.Data.EF
+		SccProjectUniqueName26 = LeaRun.Application\\LeaRun.Application.Entity\\LeaRun.Application.Entity.csproj
+		SccProjectTopLevelParentUniqueName26 = LeaRun.sln
+		SccProjectName26 = LeaRun.Application/LeaRun.Application.Entity
+		SccLocalPath26 = LeaRun.Application\\LeaRun.Application.Entity
+		SccProjectUniqueName27 = LeaRun.Cache\\LeaRun.Cache.Factory\\LeaRun.Cache.Factory.csproj
+		SccProjectTopLevelParentUniqueName27 = LeaRun.sln
+		SccProjectName27 = LeaRun.Cache/LeaRun.Cache.Factory
+		SccLocalPath27 = LeaRun.Cache\\LeaRun.Cache.Factory
+		SccProjectUniqueName28 = LeaRun.Util.SignalR\\LeaRun.Util.SignalR.csproj
+		SccProjectTopLevelParentUniqueName28 = LeaRun.sln
+		SccProjectName28 = LeaRun.Util.SignalR
+		SccLocalPath28 = LeaRun.Util.SignalR
+		SccProjectUniqueName29 = LeaRun.SOA\\LeaRun.SOA.IM\\LeaRun.SOA.IM.csproj
+		SccProjectTopLevelParentUniqueName29 = LeaRun.sln
+		SccProjectName29 = LeaRun.SOA/LeaRun.SOA.IM
+		SccLocalPath29 = LeaRun.SOA\\LeaRun.SOA.IM
+	EndGlobalSection
+EndGlobal
